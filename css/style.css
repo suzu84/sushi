@@ -1,0 +1,1060 @@
+@charset "utf-8";
+
+/* 共通 */
+html,
+body,
+ul,
+li,
+a,
+p,
+tr,
+th,
+td {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+body {
+  font-family: YuMincho, "游明朝", "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", Times New Roman, serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.cTxt {
+  text-align: center;
+}
+
+.mtb60 {
+  margin: 60px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+.w15 {
+  width: 15%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+th {
+  font-weight: normal;
+}
+
+section a {
+  color: #333333;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+section {
+  margin-top: 100px;
+}
+
+section table {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+
+small {
+  font-size: .6em;
+}
+
+.noOpacity:hover {
+  opacity: 1;
+}
+
+.now {
+  opacity: 0.7;
+}
+
+header {
+  background: #600606;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+header div img {
+  width: 250px;
+  margin-right: 100px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li+li {
+  margin-left: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language {
+  background: #333333;
+}
+
+.language button {
+  margin-right: 120px;
+  height: 30px;
+  border-radius: 0;
+  opacity: .7;
+}
+
+.language button:hover {
+  opacity: 1;
+}
+
+.cTxt {
+  text-align: center;
+}
+
+.border {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.db {
+  display: block;
+}
+
+.rReverse {
+  flex-direction: row-reverse;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* MV */
+.MV {
+  text-align: center;
+  position: relative;
+  height: 900px;
+}
+
+.slide02 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/slide-02.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide03 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/slide-03.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide04 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/slide-04.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slides {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slides.current {
+  opacity: 1;
+}
+
+.MV .icon {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 99;
+}
+
+.MV span {
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 99;
+}
+
+.MV span a {
+  color: #fff;
+}
+
+/* main */
+.banner {
+  margin-top: 50px;
+}
+
+/* News */
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border-bottom: 1px solid #A9A9A9;
+  border-top: 1px solid #A9A9A9;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+th {
+  text-align: start;
+}
+
+td {
+  padding-left: 40px;
+}
+
+/* おもてなし */
+
+.backImag {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/bg1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.point {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic {
+  width: 30%;
+  position: relative;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.pic .bnr {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 50px;
+}
+
+.backImag2 {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/bg2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w30 img {
+  width: 100%;
+}
+
+/* フッター */
+footer {
+  background-image: url(../img/footer_bg1.jpg);
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  margin: 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: .9rem;
+}
+
+.redPic img {
+  width: 100%;
+  height: 20px;
+}
+
+.icon {
+  margin: 50px 0;
+}
+
+.icon img {
+  width: 15%;
+}
+
+.textbox {
+  margin: 20px 0 0;
+}
+
+.textbox .contents {
+  background: #2f2f2f;
+  margin: 20px auto;
+  width: 462px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox .contents a {
+  margin-left: 20px;
+}
+
+.snsIcon {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 8%;
+}
+
+/* ニュースページ*/
+
+.news ul {
+  margin: 80px auto;
+}
+
+.news .contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 30px;
+}
+
+.news .contents img {
+  width: 100%;
+}
+
+.detail {
+  margin: 0 auto 60px;
+  width: 80%;
+}
+
+.detail time {
+  display: block;
+}
+
+.detail .border {
+  width: 40%;
+}
+
+.detail .flex {
+  display: flex;
+}
+
+.detail .flex img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.detail .material-icons {
+  font-size: 40px;
+}
+
+.detail .next .flex {
+  flex-direction: row-reverse;
+}
+
+.detail .next .material-icons {
+  margin-right: 0;
+  text-align: end;
+  display: block;
+}
+
+/* トピックス */
+
+.topics ul {
+  margin: 80px auto;
+}
+
+.topics .contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 30px;
+}
+
+.topics .contents img {
+  width: 100%;
+}
+
+.topics {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* おしながき */
+.greeting {
+  margin-top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.greetingMv img {
+  width: 100%;
+}
+
+.greeting .contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 75px 0;
+}
+
+.greeting .contents .text {
+  width: 50%;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting .contents .pic {
+  width: 60%;
+}
+
+.greeting .contents .pic div {
+  padding: 0 10px;
+}
+
+/* お品書き */
+
+.food {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.food .foodPic {
+  display: flex;
+}
+
+.food .foodPic img {
+  width: 100%;
+}
+
+.food .season th,
+.food .season td {
+  border-bottom: 1px solid #A9A9A9;
+  font-size: 1rem;
+  padding: 10px 10px;
+  border-top: none;
+}
+
+.food .season th {
+  text-align: start;
+}
+
+.food .season td {
+  padding-left: 40px;
+  text-align: end;
+}
+
+.food .season .menu {
+  background: #ab0a2a;
+  height: 73px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 30px;
+  color: #fff;
+}
+
+.food .message {
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 70px 0;
+}
+
+.food .message p {
+  font-size: .8rem;
+}
+
+/* 店舗情報 */
+
+.access .text {
+  padding: 0 100px;
+  background: #f4f4f4;
+}
+
+.access .text tr {
+  vertical-align: baseline;
+}
+
+.access .text th,
+.access .text td {
+  border-bottom: none;
+  border-top: none;
+}
+
+.access .text th {
+  padding-right: 20px;
+}
+
+.access .reserve {
+  margin-top: 20px;
+  padding: 20px 0px;
+  border: 1px solid #2f2f2f;
+}
+
+.about .message {
+  width: 60%;
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 70px auto;
+}
+
+.about .pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto 80px;
+}
+
+/* ギャラリー */
+
+.gallery ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gallery ul li img {
+  vertical-align: bottom;
+}
+
+/* グループ店舗 */
+
+.shop {
+  width: 80%;
+  margin: 0 auto 100px;
+}
+
+.shop li {
+  margin-bottom: 30px;
+}
+
+.shop h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.shop .contents {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.shop .contents div {
+  margin-left: 30px;
+}
+
+/* スライダー用CSS */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+/* ここからSP */
+
+@media (min-width: 481px) {
+  .spOnly {
+    display: none;
+  }
+  .pcflex {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .pcOnly {
+    display: none;
+  }
+
+  .spw50 {
+    width: 50%;
+  }
+
+  .spw30 {
+    width: 30%;
+  }
+
+  header {
+    height: 60px;
+    position: sticky;
+  }
+
+  header div img {
+    width: 150px;
+  }
+
+  header ul {
+    display: block;
+  }
+
+  header li+li {
+    margin-left: 0;
+  }
+
+  .openbtn {
+    position: absolute;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+  }
+
+  /*×に変化*/
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top: 23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top: 31px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+
+  #g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #600606;
+    /*動き*/
+    transition: all 0.6s;
+  }
+
+  /*アクティブクラスがついたら位置を0に*/
+  #g-nav.panelactive {
+    top: 0;
+  }
+
+  /*ナビゲーションの縦スクロール*/
+  #g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /*ナビゲーション*/
+  #g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*リストのレイアウト設定*/
+
+  #g-nav li {
+    list-style: none;
+    text-align: center;
+  }
+
+  #g-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+
+  .banner {
+    margin-top: 30px;
+  }
+
+  .banner img {
+    width: 85%;
+  }
+
+  .en {
+    border-top: 1px solid #fff;
+  }
+
+  .MV {
+    height: 300px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p, th, td  {
+    font-size: .7rem;
+  }
+
+  td {
+    padding-left: 15px;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+
+  .sp-mrl{
+    margin: 10px auto 30px;
+  }
+
+  p {
+    line-height: 1.2rem;
+  }
+
+  .backImag {
+    height: 200px;
+    background-attachment: unset;
+  }
+
+  .backImag2 {
+    height: 200px;
+    background-attachment: unset;
+  }
+
+  .point {
+    display: block;
+  }
+
+  .pic {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .pic .bnr {
+    width: 40px;
+    left: 20px;
+  }
+
+  .point .w30 {
+    display: contents;
+    margin: 20px 0;
+  }
+
+  .icon img {
+    width: 40%;
+  }
+
+  footer p {
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  .textbox .contents {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .noOpacity.spOnly img {
+    width: 85%;
+  }
+
+  .snsIcon {
+    width: 20%;
+  }
+
+  .language button {
+    margin-right: 10px;
+  }
+
+  .news .contents,
+  .topics .contents {
+    display: block;
+  }
+
+  .news .contents a,
+  .topics .contents a {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .news .contents a img,
+  .topics .contents a img {
+    width: 40%;
+    margin-right: 10px;
+  }
+
+  time {
+    font-size: .8rem;
+  }
+
+  .greeting .contents {
+    display: block;
+  }
+
+  .greeting .contents .text {
+    width: unset;
+    padding: 0 10px;
+  }
+
+  .greeting .contents .pic {
+    width: unset;
+  }
+
+  .slick-prev {
+    /*戻る矢印の位置と形状*/
+    left: -6%;
+    transform: rotate(-135deg);
+  }
+  
+  .slick-next {
+    /*次へ矢印の位置と形状*/
+    right: -6%;
+    transform: rotate(45deg);
+  }
+  .food .season .menu {
+    width: 100%;
+  }
+
+  .about .pic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .access .text {
+    padding: 0 20px;
+    background: #f4f4f4;
+  }
+
+  .access .reserve {
+    margin-bottom: 40px;
+  }
+
+  .gallery ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .shop .contents {
+    margin: 10px 0 50px;
+  }
+}
