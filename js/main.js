@@ -21,16 +21,16 @@
   {
     function play() {
       setTimeout(() => {
-        pcImages[currentIndex].classList.remove('current');
+        spImages[currentIndex].classList.remove('current');
         currentIndex++;
-        if (currentIndex > pcImages.length - 1) {
+        if (currentIndex > spImages.length - 1) {
           currentIndex = 0;
         }
-        pcImages[currentIndex].classList.add('current');
+        spImages[currentIndex].classList.add('current');
         play();
       }, 5000);
     }
-    const pcImages = document.querySelectorAll('.MV .slides.sp');
+    const spImages = document.querySelectorAll('.MV .slides.sp');
     let currentIndex = 0;
     play();
   }
